@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.box {
+  border: .5rem solid red;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.box p {
+  font-size: 4rem;
+}
+
+.boxes {
+  height: calc(100vh);
+  position: relative;
+  display: grid;
+  justify-content: flex-start;
+  gap: 2rem 2rem;
+
+  grid-template-columns: 3fr repeat(3, 1fr);
+  /* grid-template-rows: 1fr; */
+}
