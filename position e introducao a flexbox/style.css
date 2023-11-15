@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* border box mantem as dimensoes da caixa */
+:root {
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.8rem;
+  font-family: 'times new roman';
+}
+
+nav.menu {
+  position: fixed;
+  background-color: steelblue;
+  width: 100%;
+  height: 7rem;
+  z-index: 1;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table thead:first-child{
+  background-color: steelblue;
+  color: #fff;
+}
+/* n = toda area */
+table :nth-child(n + 2) {
+  background-color: #555;
+  color: #fff;
+}
+
+table {
+  font-size: 2.4rem;
+  border-collapse: separate;
+}
+
+h1 {
+  color: darkorchid;
+  font-size: 9.6rem;
+  text-align: center;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+.contact-list {
+  position: relative;
+}
+
+.contact-list h2 {
+  top: 7rem;
+  position: sticky;
+  background-color: green;
+  width: 100%;
+}
+
+ul, ol {
+  padding-left: 2.4rem;
+  list-style: none;
+}
+
+.bg {
+  height: 70vh;
+  width: 98.7vw;
+  background-attachment: fixed;
+  background-image: url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  flex: 30%;
+  height: 10rem;
+  width: 20rem;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 1rem solid red;
+  background-color: blue;
+  color: #fff;
+  display: inline-block;
+  border-radius: .4rem;
+  position: static;
+}
+
+
+
+/* object fit cover melhora a distorção da img a cortando */
+img{
+  display: block;
+  height: 10rem;
+  width: 20rem;
+  object-fit: cover;
+}
